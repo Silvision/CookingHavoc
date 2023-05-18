@@ -502,7 +502,17 @@ PrefabInstance:
       objectReference: {fileID: 6941024645903911797}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[0].gameObject
+      value: 
+      objectReference: {fileID: 6941024645903911797}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[1].GameObject
+      value: 
+      objectReference: {fileID: 6941024645650793403}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[1].gameObject
       value: 
       objectReference: {fileID: 6941024645650793403}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
@@ -512,7 +522,17 @@ PrefabInstance:
       objectReference: {fileID: 6941024644276713581}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[2].gameObject
+      value: 
+      objectReference: {fileID: 6941024644276713581}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[3].GameObject
+      value: 
+      objectReference: {fileID: 6941024644186947513}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[3].gameObject
       value: 
       objectReference: {fileID: 6941024644186947513}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
@@ -522,7 +542,17 @@ PrefabInstance:
       objectReference: {fileID: 6941024645637527031}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
         type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[4].gameObject
+      value: 
+      objectReference: {fileID: 6941024645637527031}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
       propertyPath: kitchenObjectSOGameObjectList.Array.data[5].GameObject
+      value: 
+      objectReference: {fileID: 7135967359291129319}
+    - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
+        type: 3}
+      propertyPath: kitchenObjectSOGameObjectList.Array.data[5].gameObject
       value: 
       objectReference: {fileID: 7135967359291129319}
     - target: {fileID: 7377863521829884285, guid: 10e39c981f2de6441b54efde32ced8f0,
