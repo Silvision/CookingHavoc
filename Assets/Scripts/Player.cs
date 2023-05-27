@@ -7,7 +7,7 @@ public class Player : NetworkBehaviour, IKitchenObjectParent {
     public static event EventHandler OnAnyPlayerSpawned;
     public static event EventHandler OnAnyPickedSomething;
 
-    
+    // This clears all static data such as events so that it won't be subscribed to multiple times.
     public static void ResetStaticData() {
         OnAnyPlayerSpawned = null;
     }
