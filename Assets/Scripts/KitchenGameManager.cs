@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Timers;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KitchenGameManager : NetworkBehaviour {
 
@@ -24,6 +25,8 @@ public class KitchenGameManager : NetworkBehaviour {
         GamePlaying,
         GameOver,
     }
+
+    [SerializeField] private Transform playerPrefab;
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private bool isLocalPlayerReady;
@@ -55,6 +58,14 @@ public class KitchenGameManager : NetworkBehaviour {
 
         if (IsServer) {
             NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectedCallback;
+            NetworkManager.Singleton.SceneManager.OnLoadEventCompleted += SceneManager_OnLoadEventCompleted;
+        }
+    }
+
+    private void SceneManager_OnLoadEventCompleted(string sceneName, LoadSceneMode loadSceneModecenemode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) {
+        foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds) {
+            Transform playerTransform = Instantiate(playerPrefab);
+            playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
         }
     }
 
