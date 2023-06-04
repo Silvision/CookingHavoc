@@ -27,9 +27,7 @@ public class HostDisconnectUI : MonoBehaviour {
             Show();
         }
     }
-
-
-
+    
     private void Show() {
         gameObject.SetActive(true);
     }
